@@ -9,10 +9,11 @@
 <body>
     <div id = "root"></div>
 </body>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 <script>
-  const heading =  document.createElement("h1");
-  heading.innerHTML ="Namaster JS React";
-  document.getElementById("root").appendChild(heading);
-
+    const heading = React.createElement("h1",{},"Testing Reach API");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
 </script>
 </html>
