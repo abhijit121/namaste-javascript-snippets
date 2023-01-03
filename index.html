@@ -7,13 +7,28 @@
     <title>Nmaste React</title>
 </head>
 <body>
-    <div id = "root"></div>
-</body>
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+ <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+<div id = "root"></div>
+
 <script>
-    const heading = React.createElement("h1",{},"Testing Reach API");
+    const heading1 = React.createElement("h1",{
+        id:"heading1"
+    },"Testing Reach API H1");
+
+    const heading2 = React.createElement("h2",{
+        id:"heading2"
+    },"Testing Reach API H2");
+
+    const contianer = React.createElement("div",{
+        id:"contianer"
+    },[heading1,heading2]);
+
     const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(heading);
+    root.render(contianer);
 </script>
+    
+</body>
+
 </html>
